@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>blogs page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="assets/png"
+      href="assets/new_fav_codegraphi1.webp"
+    />
+    
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="fixed w-full bg-[#011a39] z-50 shadow-md">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="flex justify-between items-center py-3">
+          <!-- Logo -->
+          <div class="flex items-center space-x-3">
+            <!-- <div class="w-10 h-10 rounded-lg bg-green-500 flex items-center justify-center text-white font-bold text-lg">
+          FSP
+        </div>
+        <span class="text-xl font-bold text-white">Revamoney<span class="text-green-400">Pro</span></span> -->
+
+            <a href="index.html">
+              <img
+                src="assets/new_code_graphi_logo1.webp"
+                width="200px"
+                alt=""
+              />
+            </a>
+          </div>
+
+          <!-- Desktop Navigation -->
+          <nav class="hidden md:flex space-x-8 text-sm font-medium relative">
+            <a
+              href="index.html"
+              class="nav-link group relative text-gray-300 hover:text-green-400"
+            >
+              Home
+              <span
+                class="absolute left-0 -bottom-1 w-full h-[2px] bg-green-400 scale-x-0 group-hover:scale-x-100 origin-left"
+              ></span>
+            </a>
+            <a
+              href="about.html"
+              class="nav-link group relative text-white font-semibold active"
+            >
+              About Us
+              <span
+                class="absolute left-0 -bottom-1 w-full h-[2px] bg-green-400 scale-x-100 origin-left"
+              ></span>
+            </a>
+
+            <!-- Dropdown -->
+            <div class="relative group">
+              <button
+                class="nav-link flex items-center text-gray-300 hover:text-green-400"
+              >
+                Services <i class="fas fa-chevron-down ml-1 text-xs"></i>
+              </button>
+              <div
+                class="absolute hidden group-hover:block bg-white shadow-xl rounded-md mt-2 w-56 overflow-hidden border border-gray-100 py-2"
+              >
+                <a
+                  href="services.html#aeps"
+                  class="block px-4 py-3 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 transition flex items-center"
+                >
+                  <div class="service-menu-icon">
+                    <i class="fas fa-money-bill-transfer"></i>
+                  </div>
+                  AEPS
+                </a>
+                <a
+                  href="services.html#bbps"
+                  class="block px-4 py-3 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 transition flex items-center"
+                >
+                  <div class="service-menu-icon">
+                    <i class="fas fa-bolt"></i>
+                  </div>
+                  BBPS
+                </a>
+                <a
+                  href="services.html#dmt"
+                  class="block px-4 py-3 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 transition flex items-center"
+                >
+                  <div class="service-menu-icon">
+                    <i class="fas fa-paper-plane"></i>
+                  </div>
+                  DMT
+                </a>
+                <a
+                  href="services.html#travel"
+                  class="block px-4 py-3 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 transition flex items-center"
+                >
+                  <div class="service-menu-icon">
+                    <i class="fas fa-plane"></i>
+                  </div>
+                  Travel
+                </a>
+                <a
+                  href="services.html#insurance"
+                  class="block px-4 py-3 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 transition flex items-center"
+                >
+                  <div class="service-menu-icon">
+                    <i class="fas fa-shield-alt"></i>
+                  </div>
+                  Insurance
+                </a>
+                <a
+                  href="services.html#loan"
+                  class="block px-4 py-3 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 transition flex items-center"
+                >
+                  <div class="service-menu-icon">
+                    <i class="fas fa-hand-holding-usd"></i>
+                  </div>
+                  Loan
+                </a>
+              </div>
+            </div>
+
+            <a
+              href="faq.html"
+              class="nav-link group relative text-gray-300 hover:text-green-400"
+            >
+              Faq's
+              <span
+                class="absolute left-0 -bottom-1 w-full h-[2px] bg-green-400 scale-x-0 group-hover:scale-x-100 origin-left"
+              ></span>
+            </a>
+            <a
+              href="blogs.html"
+              class="nav-link group relative text-gray-300 hover:text-green-400"
+            >
+              Blogs
+              <span
+                class="absolute left-0 -bottom-1 w-full h-[2px] bg-green-400 scale-x-0 group-hover:scale-x-100 origin-left"
+              ></span>
+            </a>
+            <a
+              href="contact.html"
+              class="nav-link group relative text-gray-300 hover:text-green-400"
+            >
+              Contact Us
+              <span
+                class="absolute left-0 -bottom-1 w-full h-[2px] bg-green-400 scale-x-0 group-hover:scale-x-100 origin-left"
+              ></span>
+            </a>
+          </nav>
+
+          <!-- Login + Mobile Menu Btn -->
+          <div class="flex items-center space-x-4">
+            <a href="#">
+              <button
+                class="bg-gradient-to-r from-green-500 to-green-600 text-white px-6 py-2 rounded-full font-medium hover:from-green-600 hover:to-green-700 transition shadow-lg hidden md:block"
+              >
+                Login
+              </button>
+            </a>
+            <!-- Hamburger -->
+            <button
+              id="menu-btn"
+              class="md:hidden text-white focus:outline-none"
+            >
+              <i class="fas fa-bars text-2xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Sidebar Menu -->
+    <div
+      id="mobile-menu"
+      class="fixed top-0 right-0 h-full w-64 bg-[#01122b] transform translate-x-full transition-transform duration-300 z-50 md:hidden"
+    >
+      <div
+        class="flex justify-between items-center p-4 border-b border-gray-700"
+      >
+        <h2 class="text-white font-semibold">Menu</h2>
+        <button id="close-menu" class="text-white text-2xl">&times;</button>
+      </div>
+      <div class="px-6 py-4 space-y-4">
+        <a
+          href="index.html"
+          class="block text-gray-300 hover:text-green-400 transition"
+          >Home</a
+        >
+        <a
+          href="about.html"
+          class="block text-white hover:text-green-400 transition"
+          >About Us</a
+        >
+
+        <!-- Dropdown Mobile -->
+        <div>
+          <button
+            id="mobile-services-btn"
+            class="w-full flex justify-between items-center text-gray-300 hover:text-green-400 transition"
+          >
+            Services <i class="fas fa-chevron-down"></i>
+          </button>
+          <div id="mobile-services" class="hidden pl-4 mt-2 space-y-2">
+            <a
+              href="services.html#aeps"
+              class="block text-gray-400 hover:text-green-400 transition flex items-center"
+            >
+              <div class="service-menu-icon">
+                <i class="fas fa-money-bill-transfer"></i>
+              </div>
+              AEPS
+            </a>
+            <a
+              href="services.html#bbps"
+              class="block text-gray-400 hover:text-green-400 transition flex items-center"
+            >
+              <div class="service-menu-icon"><i class="fas fa-bolt"></i></div>
+              BBPS
+            </a>
+            <a
+              href="services.html#dmt"
+              class="block text-gray-400 hover:text-green-400 transition flex items-center"
+            >
+              <div class="service-menu-icon">
+                <i class="fas fa-paper-plane"></i>
+              </div>
+              DMT
+            </a>
+            <a
+              href="services.html#travel"
+              class="block text-gray-400 hover:text-green-400 transition flex items-center"
+            >
+              <div class="service-menu-icon"><i class="fas fa-plane"></i></div>
+              Travel
+            </a>
+            <a
+              href="services.html#insurance"
+              class="block text-gray-400 hover:text-green-400 transition flex items-center"
+            >
+              <div class="service-menu-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              Insurance
+            </a>
+            <a
+              href="services.html#loan"
+              class="block text-gray-400 hover:text-green-400 transition flex items-center"
+            >
+              <div class="service-menu-icon">
+                <i class="fas fa-hand-holding-usd"></i>
+              </div>
+              Loan
+            </a>
+          </div>
+        </div>
+
+        <a
+          href="faq.html"
+          class="block text-gray-300 hover:text-green-400 transition"
+          >Faq's</a
+        >
+        <a
+          href="blogs.html"
+          class="block text-gray-300 hover:text-green-400 transition"
+          >Blogs</a
+        >
+        <a
+          href="contact.html"
+          class="block text-gray-300 hover:text-green-400 transition"
+          >Contact Us</a
+        >
+        <a href="#">
+          <button
+            class="w-full bg-gradient-to-r from-green-500 to-green-600 text-white px-6 py-2 rounded-full font-medium hover:from-green-600 hover:to-green-700 transition shadow-lg"
+          >
+            Login
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Overlay -->
+    <div
+      id="overlay"
+      class="fixed inset-0 bg-black bg-opacity-50 hidden z-40 md:hidden"
+    ></div>
+
+    <!-- Hero -->
+    <section class="pt-36 pb-20 bg-[#011a39] px-4">
+      <div class="max-w-7xl mx-auto text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">
+          Our <span class="text-green-500">Blogs</span>
+        </h1>
+        <p class="text-lg text-blue-100 max-w-3xl mx-auto">
+          Latest updates, trends and knowledge from the world of B2B financial
+          services.
+        </p>
+      </div>
+    </section>
+
+    <!-- Blogs Main Section -->
+    <section
+      class="max-w-7xl mx-auto px-6 mt-12 grid grid-cols-1 lg:grid-cols-3 gap-10"
+    >
+      <!-- Blog Posts -->
+      <section class="lg:col-span-2 space-y-10">
+        <!-- Blog Card -->
+        <article
+          class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition p-6"
+        >
+          <img
+            src="assets/AEPS – Aadhaar Enabled Payment System.jpg"
+            alt="Blog 1"
+            class="rounded-lg mb-5"
+          />
+          <h2 class="text-2xl font-semibold mb-3">
+            Understanding AEPS – Aadhaar Enabled Payment System
+          </h2>
+          <p class="text-gray-600 mb-4">
+            AEPS allows customers to make basic banking transactions using
+            Aadhaar authentication. Learn how agents and retailers benefit from
+            AEPS in India.
+          </p>
+          <a href="#" class="text-green-500 font-semibold hover:underline"
+            >Read More →</a
+          >
+        </article>
+
+        <!-- Blog Card -->
+        <article
+          class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition p-6"
+        >
+          <img
+            src="assets/BBPS – One-Stop Bill Payment Solution.jpg"
+            alt="Blog 2"
+            class="rounded-lg mb-5"
+          />
+          <h2 class="text-2xl font-semibold mb-3">
+            BBPS – One-Stop Bill Payment Solution
+          </h2>
+          <p class="text-gray-600 mb-4">
+            With Bharat Bill Payment System, customers can pay electricity, gas,
+            water, and telecom bills instantly. Explore how Revamoney simplifies
+            bill payments.
+          </p>
+          <a href="#" class="text-green-500 font-semibold hover:underline"
+            >Read More →</a
+          >
+        </article>
+
+        <!-- Blog Card -->
+        <article
+          class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition p-6"
+        >
+          <img
+            src="assets/Domestic Money Transfer (DMT) Made Simple.jpg"
+            alt="Blog 3"
+            class="rounded-lg mb-5"
+          />
+          <h2 class="text-2xl font-semibold mb-3">
+            Domestic Money Transfer (DMT) Made Simple
+          </h2>
+          <p class="text-gray-600 mb-4">
+            Instantly transfer money to any bank account across India. Revamoney
+            ensures safe and fast transactions with real-time settlements.
+          </p>
+          <a href="#" class="text-green-500 font-semibold hover:underline"
+            >Read More →</a
+          >
+        </article>
+      </section>
+
+      <!-- Sidebar -->
+      <aside class="space-y-8">
+        <!-- Search -->
+        <section class="bg-white rounded-2xl shadow-md p-5">
+          <h3 class="text-xl font-semibold mb-3">Search</h3>
+          <div class="relative">
+            <input
+              type="text"
+              placeholder="Search blog..."
+              class="w-full rounded-xl border-gray-300 pl-4 pr-10 py-2 focus:ring-2 focus:ring-green-500"
+            />
+            <i class="fas fa-search absolute right-3 top-3 text-gray-500"></i>
+          </div>
+        </section>
+
+        <!-- Categories -->
+        <section class="bg-white rounded-2xl shadow-md p-5">
+          <h3 class="text-xl font-semibold mb-3">Categories</h3>
+          <ul class="space-y-2 text-gray-700">
+            <li>
+              <a href="#" class="hover:text-green-600"
+                ><i class="fas fa-angle-right mr-2"></i>AEPS</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-600"
+                ><i class="fas fa-angle-right mr-2"></i>BBPS</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-600"
+                ><i class="fas fa-angle-right mr-2"></i>DMT</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-600"
+                ><i class="fas fa-angle-right mr-2"></i>Insurance</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-600"
+                ><i class="fas fa-angle-right mr-2"></i>Loans</a
+              >
+            </li>
+          </ul>
+        </section>
+
+        <!-- Recent Posts -->
+        <section class="bg-white rounded-2xl shadow-md p-5">
+          <h3 class="text-xl font-semibold mb-3">Recent Posts</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-center gap-3">
+              <img
+                src="assets/Digital Banking Growth in India.jpg"
+                class="w-14 h-14 rounded-lg object-cover"
+              />
+              <a href="#" class="hover:text-green-600"
+                >Digital Banking Growth in India</a
+              >
+            </li>
+            <li class="flex items-center gap-3">
+              <img
+                src="assets/How Micro-Loans Empower Small Businesses.jpg"
+                class="w-14 h-14 rounded-lg object-cover"
+              />
+              <a href="#" class="hover:text-green-600"
+                >How Micro-Loans Empower Small Businesses</a
+              >
+            </li>
+            <li class="flex items-center gap-3">
+              <img
+                src="assets/Benefits of Digital Insurance Policies.jpg"
+                class="w-14 h-14 rounded-lg object-cover"
+              />
+              <a href="#" class="hover:text-green-600"
+                >Benefits of Digital Insurance Policies</a
+              >
+            </li>
+          </ul>
+        </section>
+      </aside>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-[#011a39] px-4">
+      <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-white mb-6">
+          Ready to <span class="text-green-500">Start</span> Offering These
+          Services?
+        </h2>
+        <p class="text-blue-100 max-w-2xl mx-auto mb-8">
+          Join thousands of businesses that have partnered with us to offer
+          financial services and increase their revenue streams.
+        </p>
+        <div
+          class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4"
+        >
+          <button
+            class="bg-green-500 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-600 transition duration-300 flex items-center justify-center shadow-lg"
+          >
+            <i class="fas fa-user-plus mr-2"></i> Register Now
+          </button>
+          <a href="contact.html">
+            <button
+              class="bg-white bg-opacity-10 text-white px-8 py-3 rounded-lg font-medium hover:bg-opacity-20 transition duration-300 flex items-center justify-center"
+            >
+              <i class="fas fa-phone-alt mr-2"></i> Contact Sales
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#01122b] text-white py-16 px-4">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+          <!-- Logo & Description -->
+          <div>
+            <div class="flex items-center mb-6">
+              <!-- <div class="w-10 h-10 rounded-lg bg-green-500 flex items-center justify-center text-white font-bold text-lg mr-3">
+            FSP
+          </div>
+          <span class="text-xl font-bold">Revamoney<span class="text-green-400">Pro</span></span> -->
+              <img
+                src="assets/new_code_graphi_logo1.webp"
+                width="210px"
+                alt=""
+                style="border-radius: 10px"
+              />
+            </div>
+            <p class="text-gray-400 mb-6 leading-relaxed">
+              Providing reliable and seamless B2B financial services including
+              AEPS, DMT, BBPS, Insurance, and Loans, helping businesses grow
+              with real-time settlements and robust integrations.
+            </p>
+            <div class="flex space-x-4 mt-2">
+              <a href="#" class="text-gray-400 hover:text-green-400 transition"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-green-400 transition"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-green-400 transition"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-green-400 transition"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Services -->
+          <div>
+            <h3 class="text-lg font-semibold mb-6">Services</h3>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="services.html#aeps"
+                  class="text-gray-400 hover:text-green-400 transition"
+                  >AEPS Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html#bbps"
+                  class="text-gray-400 hover:text-green-400 transition"
+                  >BBPS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html#dmt"
+                  class="text-gray-400 hover:text-green-400 transition"
+                  >Domestic Money Transfer</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html#insurance"
+                  class="text-gray-400 hover:text-green-400 transition"
+                  >Insurance</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html#loan"
+                  class="text-gray-400 hover:text-green-400 transition"
+                  >Loan Services</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Company -->
+          <div>
+            <h3 class="text-lg font-semibold mb-6">Company</h3>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="about.html"
+                  class="text-gray-400 hover:text-green-400 transition"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="blogs.html"
+                  class="text-gray-400 hover:text-green-400 transition"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="term_and_condition.html"
+                  class="text-gray-400 hover:text-green-400 transition"
+                  >Terms And Condtion</a
+                >
+              </li>
+              <li>
+                <a
+                  href="privacy_policy.html"
+                  class="text-gray-400 hover:text-green-400 transition"
+                  >Privacy Policies</a
+                >
+              </li>
+              <li>
+                <a
+                  href="refund_policy.html"
+                  class="text-gray-400 hover:text-green-400 transition"
+                  >Refund Policies</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-gray-400 hover:text-green-400 transition"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div>
+            <h3 class="text-lg font-semibold mb-6">Contact Info</h3>
+            <ul class="space-y-3 text-gray-400">
+              <li class="flex items-start">
+                <i class="fas fa-map-marker-alt text-green-500 mt-1 mr-3"></i>
+                <span>Jansath road, Muzaffarnagar, Uttar Pradesh 251001</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-phone-alt text-green-500 mr-3"></i>
+                <span>+91 7453016189</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-envelope text-green-500 mr-3"></i>
+                <span>care@revamoney.com</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div
+          class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400"
+        >
+          <p>
+            © 2025
+            <a
+              href="https://codegraphi.com"
+              target="_blank"
+              class="hover:text-green-400 transition"
+              >codegraphi.com</a
+            >. All rights reserved. Crafted by
+            <span class="font-semibold text-white">Code Graphi</span> with ❤️
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="server.js"></script>
+  </body>
+</html>
