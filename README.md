@@ -35,7 +35,21 @@ This project was created as part of my **internship assignment at Codegraphi**. 
 - ⚙️ Basic interactive features via JavaScript (e.g., navbar toggle, smooth scroll)  
 - 🧩 Clear and modular project structure for easy maintenance
 
----
+-
 
-## 📂 Project Structure
-
+## 📂 Project Structure  
+ 
+codegraphi_webTask/
+│── index.html # Home page
+│── about.html # About page
+│── services.html # Services page
+│── faqs.html # FAQs page
+│── blogs.html # Blogs page
+│── contact.html # Contact page
+│
+│── style.css # Main stylesheet
+│── server.js # JavaScript (server or interactions)
+│
+├── assets/ # Project assets (images, logos, etc.)
+│
+└── README.md # Project documentation
